@@ -1,0 +1,25 @@
+:root{
+  --primary-bg: rgb(0, 0, 0);
+}
+
+body{
+  box-sizing: border-box;
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  color: white;
+}
+
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
