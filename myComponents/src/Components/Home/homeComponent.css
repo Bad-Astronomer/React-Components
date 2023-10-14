@@ -1,36 +1,27 @@
-.primary-button{
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&family=Pacifico&display=swap');
+
+.regular-button{
     font-size: 1.125em;
     cursor: pointer;
     padding: 0.9em 1.5em;
     border-radius: 12.5px;
+    width: 100%;
     
     color: rgb(224, 224, 224);
     position: relative;
     border: none;
     background-color: rgb(24, 24, 24);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 200ms ease;
 }
-.primary-button:hover{
+.regular-button:hover{
     color: white;
     background-color: black;
+    border: 1px solid white;
 }
 
-.primary-button:before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(
-        to right,
-        rgb(0, 220, 130),
-        rgb(54, 228, 218),
-        rgb(22, 167, 158)
-    );
-    inset: -2px;
-    z-index: -1;
-    border-radius: 12.5px;
-    transition: all 200ms ease;
-}
-
-.primary-button:hover:before {
-    box-shadow: rgba(0, 220, 130, 0.5) 0px 0px 10px 0px,
-        rgba(54, 228, 218, 0.5) 0px 0px 20px 0px;
+.myComponentsHeader{
+    font-size: 2em;
+    padding-bottom: 1em;
+    font-family: 'Pacifico', cursive;
 }

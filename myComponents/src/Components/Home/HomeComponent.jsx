@@ -1,12 +1,22 @@
 import {NavLink} from 'react-router-dom';
-import "./homeComponent.css"
+import "./homeComponent.css";
 
-const HomeComponent = ({text, onClickFunction}) => {
+
+const HomeComponent = () => {
     return (
-    <div className="flex-container">
-        <NavLink to="customButton">
-            <button className="primary-button" onClick={() => {onClickFunction()}}>{text}</button>
+    <div className="flex-container" style={{flexDirection: "column", gap: "20px"}}>
+
+        <div className="myComponentsHeader">My Components</div>
+
+        
+        <NavLink to="primaryButton" style = {{width: "100%"}}>
+            <button className="regular-button">Primary Button</button>
         </NavLink>
+
+        <NavLink to="card" style = {{width: "100%"}}>
+            <button className="regular-button">Card Component</button>
+        </NavLink>
+        
     </div>
     )
 }
