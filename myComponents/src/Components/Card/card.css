@@ -1,5 +1,14 @@
 .card-component{
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    background-color: gray;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.card-component:hover{
+    scale: 1.025;
 }
