@@ -15,6 +15,13 @@ const defaultProps = {
     buttonText: "Button",
 }
 
+const Button = ({text = "Default Button"}) => {
+    return(
+        <button className="card-button">{text}</button>
+    )
+}
+
+
 const Card = (props = {}) => {
     props.hero ? "" : props = defaultProps;
 
@@ -43,9 +50,7 @@ const Card = (props = {}) => {
             <div className="card-subs">
                 {props.subs}
             </div>
-            <div className="card-button">
-                {props.buttonText}
-            </div>
+            <Button text = {props.buttonText} />
         </div>
     )
 }
