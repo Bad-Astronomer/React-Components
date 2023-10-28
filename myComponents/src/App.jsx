@@ -4,6 +4,7 @@ import './App.css'
 import HomeComponent from './Components/Home/HomeComponent';
 import PrimaryButton from './Components/PrimaryButton/PrimaryButton';
 import Card from './Components/Card/Card';
+import Follower from './Components/Follower/Follower';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/*" element={<HomeComponent/>}></Route>
           <Route path="/primaryButton" element={<PrimaryButton/>}></Route>
           <Route path="/card" element={<Card/>}></Route>
+          <Route path="/follower" element={<Follower/>}></Route>
         </Routes>
       </div>
     </>

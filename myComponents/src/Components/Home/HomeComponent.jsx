@@ -16,6 +16,10 @@ const HomeComponent = () => {
         <NavLink to="card" style = {{width: "100%"}}>
             <button className="regular-button">Card Component</button>
         </NavLink>
+
+        <NavLink to="follower" style = {{width: "100%"}}>
+            <button className="regular-button">Mouse Follower</button>
+        </NavLink>
         
     </div>
     )
