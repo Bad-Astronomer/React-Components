@@ -20,6 +20,10 @@ const HomeComponent = () => {
         <NavLink to="follower" style = {{width: "100%"}}>
             <button className="regular-button">Mouse Follower</button>
         </NavLink>
+
+        <NavLink to="vercelCard" style = {{width: "100%"}}>
+            <button className="regular-button">Vercel Card</button>
+        </NavLink>
         
     </div>
     )
