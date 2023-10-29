@@ -1,7 +1,28 @@
 import { useRef, useEffect } from 'react';
 import './vercelCard.css';
 
+
 const VercelCardBorder = () => {
+    const backgroundStyle = {
+        background: "black",
+        position: "absolute",
+        width: "100%",
+        height: "100%",
+        inset: "0 0",
+        zIndex: 1,
+        borderRadius: "inherit",
+    }
+    const borderStyle = {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        borderRadius: "16px",
+        zIndex: -1,
+        background: "linear-gradient( 45deg, rgba(0, 220, 130, 1), rgba(54, 228, 218, 1), rgba(22, 167, 158, 1))",
+        width: "calc(100% + 1px)",
+        height: "calc(100% + 1px)",
+    }
+
     const cardBorderRef = useRef();
 
     useEffect(() => {
@@ -44,7 +65,10 @@ const VercelCardBorder = () => {
     }, []);
 
     return (
-        <div className="card-border" ref={cardBorderRef}></div>
+        <>
+            <div style={backgroundStyle}></div>
+            <div style={borderStyle} ref={cardBorderRef}></div>
+        </>
     )
 }
 
